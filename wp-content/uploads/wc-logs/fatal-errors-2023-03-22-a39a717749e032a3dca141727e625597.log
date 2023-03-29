@@ -1,0 +1,15 @@
+2023-03-22T17:47:49+00:00 CRITICAL Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, WP_Error given in C:\xampp\htdocs\mystore\wp-includes\functions.php:3021
+Stack trace:
+#0 C:\xampp\htdocs\mystore\wp-includes\functions.php(3021): preg_match('!\\.(jpg|jpeg|jp...', Object(WP_Error), NULL)
+#1 C:\xampp\htdocs\mystore\wp-includes\media.php(3849): wp_check_filetype(Object(WP_Error))
+#2 C:\xampp\htdocs\mystore\wp-content\plugins\instagram-feed\inc\class-sb-instagram-post.php(265): wp_get_image_editor(Object(WP_Error))
+#3 C:\xampp\htdocs\mystore\wp-content\plugins\instagram-feed\inc\class-sb-instagram-post-set.php(171): SB_Instagram_Post->resize_and_save_image(Array, 'C:\\xampp\\htdocs...', 'http://localhos...')
+#4 C:\xampp\htdocs\mystore\wp-content\plugins\instagram-feed\inc\if-functions.php(805): SB_Instagram_Post_Set->maybe_save_update_and_resize_images_for_posts()
+#5 C:\xampp\htdocs\mystore\wp-content\plugins\instagram-feed\inc\if-functions.php(442): sbi_resize_posts_by_id(Array, '*1', Array)
+#6 C:\xampp\htdocs\mystore\wp-includes\class-wp-hook.php(308): sbi_process_submitted_resize_ids('')
+#7 C:\xampp\htdocs\mystore\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\mystore\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\mystore\wp-admin\admin-ajax.php(188): do_action('wp_ajax_sbi_res...')
+#10 {main}
+  thrown in C:\xampp\htdocs\mystore\wp-includes\functions.php on line 3021
+
