@@ -80,6 +80,8 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+set_time_limit(600);
+@ini_set( 'max_input_vars' , 3000); 
 
 /* Add any custom values between this line and the "stop editing" line. */
 
