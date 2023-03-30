@@ -1,0 +1,4 @@
+2023-03-30T03:42:16+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\mystore\wp-content\plugins\simply-static\vendor\voku\portable-utf8\src\voku\helper\UTF8.php on line 12846
+
+2023-03-30T03:55:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\mystore\wp-includes\Requests\Transport\cURL.php on line 462
+
